@@ -12,6 +12,7 @@ export const BlogList = () => {
             try {
                 await Client.getEntries().then((entries) => {
                     console.log(entries)
+                    setBlogPosts(entries)
                 })
             }catch (err) {
                 console.error(err)
@@ -20,6 +21,10 @@ export const BlogList = () => {
         getAllEntries()
     }, [])
     return (
-        <h1>BlogList</h1>
+        <>
+            {blogPosts?.items?.map((data) => {
+                
+            })}
+        </>
     )
 }
