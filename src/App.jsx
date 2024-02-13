@@ -1,6 +1,7 @@
 import { BlogList } from "./Components/Blog/BlogList"
 import { BlogDetails } from "./Components/Blog/BlogDetails"
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
+import "./App.scss"
 function App() {
   
 

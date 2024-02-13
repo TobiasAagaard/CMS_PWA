@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blogListStyles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+   article {
+    max-width: 700px;
+    header {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+    img {
+        width: 100%;
+    }
+    h4 {
+        margin: 0.5rem 0 0.5rem;
+    }
+    .buttonContainer {
+    a {
+        padding: 1rem 4rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000;
+        background-color: #00aa3d;
+        border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        &:hover {
+            background-color: #00ff3d;
+        }
+    }
+    }
+}
+   
+}
