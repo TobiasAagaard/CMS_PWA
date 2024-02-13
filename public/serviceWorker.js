@@ -2,7 +2,7 @@ const CACHE_NAME = "version-1";
 const urlsToCache = ["../index.html", "offline.html"];
 const self = this;
 
-
+//installation
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -13,6 +13,7 @@ self.addEventListener("install", (event) => {
   );
 });
 
+//lytter til requst 
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((res) => {
@@ -21,6 +22,7 @@ self.addEventListener("fetch", (event) => {
   );
 });
 
+//service worker
 self.addEventListener("activate", (event) => {
     const cacheWhitelist = [];
     cacheWhitelist.push(CACHE_NAME);
